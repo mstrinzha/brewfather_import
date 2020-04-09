@@ -7,6 +7,7 @@ Open a terminal window on Raspberry Pi and type:
 ```
 cd craftbeerpi3
 git clone https://github.com/mstrinzha/brewfather_import.git modules/plugins/brewfather_import
+sudo apt-get install python-openssl
 sudo pip install -r modules/plugins/brewfather_import/requirements.txt
 ```
 Restart CraftBeerPi, open link in your favorite browser
