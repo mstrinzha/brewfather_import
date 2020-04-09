@@ -15,4 +15,9 @@ https://<raspberrypi_ip>:5001/
 ```
 and add selfsigned sertificate to trusted.
 
+Open BrewFather.app, enable Custom Endpoint and set URL:
+```
+https://<raspberrypi_ip>:5001/brewfather_import/v1
+```
+
 Enjoy.
