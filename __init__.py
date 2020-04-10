@@ -99,7 +99,7 @@ def init(cbpi):
                 
                 Step.delete_all()
                 StepView().reset()
-                mashstep_type = "MashStep"
+                mashstep_type = cbpi.get_config_parameter("step_mash", "MashStep")
                 mash_kettle = cbpi.get_config_parameter("step_mash_kettle", None)
                 for step in steps:
                     Step.insert(**{"name": step.get("name","Mash Step"), "type": mashstep_type, "config": {"kettle": mash_kettle, "temp": step.get("stepTemp",0), "timer": step.get("stepTime",0)}})
